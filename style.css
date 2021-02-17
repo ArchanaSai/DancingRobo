@@ -1,0 +1,129 @@
+h1{
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+}
+
+.robot{
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+.android{}.eyes{}
+
+.head,
+.left-arm,
+.right-arm,
+.torso,
+.left-leg,
+.right-leg
+{
+	background-color: #5f93e8;
+}
+
+/*part 1*/
+.head{
+	width: 200px;
+	height: 150px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	border-radius: 200px 200px 0 0; 
+}
+
+.head:hover{
+	width: 300px;
+	transition: 1s ease-in-out;
+}
+
+/*part 2*/
+.upper-body{
+	width: 300px;
+	height: 150px;
+	display: flex;
+	margin: 0 auto;
+}
+
+.left-arm,.right-arm{
+	width: 40px;
+	height: 150px;
+	border-radius: 100px; 
+}
+
+.torso{
+	width: 200px;
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+}
+
+.left-arm{
+	margin-right: 10px;
+}
+
+.left-arm:hover,.right-arm:hover{
+	background-color: cyan;
+}
+
+.right-arm{
+	margin-left: 10px;
+}
+
+/*part 3*/
+.lower-body{
+	width: 200px;
+	height: 200px;
+	display: flex;
+	margin: 0 auto;
+}
+
+.left-leg,.right-leg{
+	width: 40px;
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+}
+
+.left-leg{
+	margin-left: 45px;
+}
+.left-leg:hover{
+	transform: rotate(20deg);
+	/*to enable in different browsers*/
+	-webkit-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+}
+
+.right-leg{
+	margin-left: 30px;
+}
+.right-leg:hover{
+	transform: rotate(-20deg);
+	/*to enable in different browsers*/
+	-webkit-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+}
+
+/*eyes*/
+
+.eyes{
+	display: flex;
+}
+
+.left-eye,
+.right-eye{
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 15px; 
+}
+
+.left-eye{
+	position: relative;
+	top: 100px;
+	left: 40px;
+}
+
+.right-eye{
+	position: relative;
+	top: 100px;
+	left: 120px;
+}
